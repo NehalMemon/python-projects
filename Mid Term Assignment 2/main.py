@@ -25,7 +25,7 @@ def income():
     return income_list
 
 income_ = income()
-total_income = reduce(lambda x, y: x + y, income_, 0) if income_ else 0
+total_income = reduce(lambda x, y: x + y, income_a) if income_ else 0
 
 def expense():
     expense_list = []
@@ -35,7 +35,7 @@ def expense():
     return expense_list
 
 expense_ = expense()
-total_expense = reduce(lambda x, y: x + y, expense_, 0) if expense_ else 0
+total_expense = reduce(lambda x, y: x + y, expense_) if expense_ else 0
 
 
 def saving_over_expense():
@@ -62,7 +62,7 @@ def msg_decider(msg1, msg2, msg3):
 def email_sender():
     from_address = "nehalmemon73@gmail.com"
     to_email = "nehalmemon73@gmail.com"
-    password = "prtp qiou xibo abup"  
+    password = "passwordaaaaa aa"  
     subject = f"Monthly budget of {l_month}"
     
     with open('msg.txt', 'r') as file:
