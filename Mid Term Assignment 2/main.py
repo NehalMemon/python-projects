@@ -139,7 +139,7 @@ def delete_data():
             print(f"Failed to retrieve data for deletion. Status code: {response.status_code}")
             break
 if __name__=="__main__":
-      if today.strftime("%d")== "07" :
+      if today.strftime("%d")== "01" :
          email_sender()
          add_data() 
          delete_data()         
