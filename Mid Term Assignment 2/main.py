@@ -25,7 +25,7 @@ def income():
     return income_list
 
 income_ = income()
-total_income = reduce(lambda x, y: x + y, income_a) if income_ else 0
+total_income = reduce(lambda x, y: x + y, income_) if income_ else 0
 
 def expense():
     expense_list = []
